@@ -1,0 +1,29 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler
+Gemfile.lock
+vendor/
+
+# Obsidian — keep shared config, ignore per-machine state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Only track the root Obsidian vault — nested .obsidian dirs are accidental
+_posts/.obsidian/
+_templates/.obsidian/
+_journal/.obsidian/
+
+# Private journal entries — never committed, never pushed, never built
+_journal/private/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tooling
+.claude/

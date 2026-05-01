@@ -1,10 +1,11 @@
 ---
-title: obsidian-test-post
+title: Obsidian Test Post
 date: 2026-05-01
-excerpt:
-layout: post
+excerpt: A short test post drafted in Obsidian to confirm the publishing pipeline works end-to-end.
 ---
 
-# Hello world
-## This is a markdown test written in Obsidian.md.
+A short test post drafted in Obsidian to confirm the publishing pipeline works end-to-end.
 
+## Markdown check
+
+This is a markdown test written in Obsidian. If you're reading it, the workflow held together.
