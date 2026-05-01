@@ -10,10 +10,14 @@ permalink: /journal/
   {% assign entries = site.journal | sort: "date" | reverse %}
   {% for entry in entries %}
   <li>
-    <p class="post-meta">{{ entry.date | date: "%B %-d, %Y" }}</p>
-    <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
-    {% if entry.excerpt %}<p class="post-excerpt">{{ entry.excerpt }}</p>{% endif %}
-    <a class="read-more" href="{{ entry.url }}">Read more</a>
+    <div class="post-list-date">
+      <p class="post-meta">{{ entry.date | date: "%b %-d," }}<br>{{ entry.date | date: "%Y" }}</p>
+    </div>
+    <div class="post-list-content">
+      <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+      {% if entry.excerpt %}<p class="post-excerpt">{{ entry.excerpt }}</p>{% endif %}
+      <a class="read-more" href="{{ entry.url }}">Read more</a>
+    </div>
   </li>
   {% else %}
   <li><p class="post-excerpt">Nothing public here yet.</p></li>
