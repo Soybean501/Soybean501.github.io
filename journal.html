@@ -1,0 +1,21 @@
+---
+layout: default
+title: Journal
+permalink: /journal/
+---
+
+<h1 class="page-title">Journal</h1>
+
+<ul class="post-list">
+  {% assign entries = site.journal | sort: "date" | reverse %}
+  {% for entry in entries %}
+  <li>
+    <p class="post-meta">{{ entry.date | date: "%B %-d, %Y" }}</p>
+    <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+    {% if entry.excerpt %}<p class="post-excerpt">{{ entry.excerpt }}</p>{% endif %}
+    <a class="read-more" href="{{ entry.url }}">Read more</a>
+  </li>
+  {% else %}
+  <li><p class="post-excerpt">Nothing public here yet.</p></li>
+  {% endfor %}
+</ul>

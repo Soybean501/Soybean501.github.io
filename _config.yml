@@ -1,3 +1,36 @@
 title: Harry Towers
+description: Writing on software, design, and how ideas connect across disciplines.
 url: "https://soybean501.github.io"
+lang: en
 permalink: /posts/:slug/
+
+exclude:
+  - .obsidian
+  - _templates
+  - _journal/private
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  journal:
+    output: true
+    permalink: /journal/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: journal
+    values:
+      layout: post
+      published: false
