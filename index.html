@@ -1,51 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harry Towers</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+---
+layout: default
+---
 
-  <header>
-    <div class="site-wrapper">
-      <h1 class="site-title"><a href="/">Harry Towers</a></h1>
-      <nav>
-        <a href="/">Writing</a>
-        <a href="/about.html">About</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="site-wrapper">
-      <ul class="post-list">
-
-        <li>
-          <p class="post-meta">May 1, 2026</p>
-          <h2><a href="/posts/on-simplicity.html">On Simplicity</a></h2>
-          <p class="post-excerpt">The urge to add more — more features, more words, more complexity — is almost always the wrong instinct. The hardest thing in any craft is knowing what to leave out.</p>
-          <a class="read-more" href="/posts/on-simplicity.html">Read more</a>
-        </li>
-
-        <li>
-          <p class="post-meta">April 14, 2026</p>
-          <h2><a href="/posts/hello-world.html">Hello, World</a></h2>
-          <p class="post-excerpt">Every blog starts with a first post. This is mine. A brief introduction to who I am, what I think about, and why I decided to start writing in public.</p>
-          <a class="read-more" href="/posts/hello-world.html">Read more</a>
-        </li>
-
-      </ul>
-    </div>
-  </main>
-
-  <footer>
-    <div class="site-wrapper">
-      <span>Harry Towers</span>
-      <span>© 2026</span>
-    </div>
-  </footer>
-
-</body>
-</html>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p class="post-excerpt">{{ post.excerpt }}</p>
+    <a class="read-more" href="{{ post.url }}">Read more</a>
+  </li>
+  {% endfor %}
+</ul>
