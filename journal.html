@@ -15,6 +15,9 @@ permalink: /journal/
     </div>
     <div class="post-list-content">
       <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+      {% if entry.written_by %}
+      <p class="post-list-authorship"><span class="authorship-badge authorship-{{ entry.written_by }}">{% if entry.written_by == 'ai' %}AI-written{% else %}By hand{% endif %}</span></p>
+      {% endif %}
       {% if entry.excerpt %}<p class="post-excerpt">{{ entry.excerpt }}</p>{% endif %}
       <a class="read-more" href="{{ entry.url }}">Read more</a>
     </div>

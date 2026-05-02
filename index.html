@@ -10,6 +10,9 @@ layout: default
     </div>
     <div class="post-list-content">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {% if post.written_by %}
+      <p class="post-list-authorship"><span class="authorship-badge authorship-{{ post.written_by }}">{% if post.written_by == 'ai' %}AI-written{% else %}By hand{% endif %}</span></p>
+      {% endif %}
       <p class="post-excerpt">{{ post.excerpt }}</p>
       <a class="read-more" href="{{ post.url }}">Read more</a>
     </div>
