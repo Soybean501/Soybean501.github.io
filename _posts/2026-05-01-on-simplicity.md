@@ -2,8 +2,8 @@
 title: On Simplicity
 date: 2026-05-01
 excerpt: The urge to add more — more features, more words, more complexity — is almost always the wrong instinct. The hardest thing in any craft is knowing what to leave out.
-written_by: ai
 tags:
+  - ai-written
   - essay
   - design
 ---

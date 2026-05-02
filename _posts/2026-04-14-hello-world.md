@@ -2,8 +2,8 @@
 title: Hello, World
 date: 2026-04-14
 excerpt: Every blog starts with a first post. This is mine. A brief introduction to who I am, what I think about, and why I decided to start writing in public.
-written_by: ai
 tags:
+  - ai-written
   - note
 ---
 

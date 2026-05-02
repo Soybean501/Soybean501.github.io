@@ -2,8 +2,8 @@
 title: Obsidian Test Post
 date: 2026-05-01
 excerpt: A short test post drafted in Obsidian to confirm the publishing pipeline works end-to-end.
-written_by: human
 tags:
+  - by-hand
   - process
 ---
 
