@@ -4,7 +4,8 @@ date: 2026-05-02
 excerpt:
 tags:
   - by-hand
-  - note
+  - personal
+  - gaming
 ---
 
 I recently started playing World of Warcraft again after about a 1.5 - 2 year hiatus which is typically how I engage with WoW; pickup the new expansion a little late (1-2 months into the xpac), play until the level cap, run some dungeons, interact with endgame content for a few seasons, grind the gear treadmill until I get bored, then quit until the next new thing comes out.
